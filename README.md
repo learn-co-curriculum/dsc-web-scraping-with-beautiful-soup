@@ -1,7 +1,7 @@
 
 # Web Scraping with Beautiful Soup
 
-### Introduction
+## Introduction
 
 The web is full of great datasets, but not all of them are readily available for download and analysis.
 Today we'll take a look at how you can surf the web robotically, saving the relevant information into storage containers as you go!
@@ -21,7 +21,7 @@ You will be able to:
 * Scrape static webpages
 * Select specific elements from the DOM
 
-### Web Page Introduction: **The DOM + HTML**
+## Web Page Introduction: **The DOM + HTML**
 
 Before we start scraping, having a little background about how web pages are formatted is very helpful.
 
@@ -34,7 +34,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduct
 
 ![](./images/DOM-model.svg.png)
 
-### Beautiful Soup   
+## Beautiful Soup   
 https://www.crummy.com/software/BeautifulSoup/bs4/doc/   
 
 Beautiful Soup is a Python library designed for quick turnaround projects like screen-scraping. Three features make it powerful:
@@ -55,7 +55,7 @@ import re
 import pandas as pd
 ```
 
-### An example webpage
+## An example webpage
 
 
 ```python
@@ -159,7 +159,7 @@ print(soup.find(id="link3"))
     None
 
 
-### Grabbing a Web Page
+## Grabbing a Web Page
 
 
 ```python
@@ -204,7 +204,7 @@ Here's the page itself:
 
 ![](./images/home_page.png)
 
-### Parsing the DOM
+## Parsing the DOM
 
 ### soup.findAll()
 
@@ -248,7 +248,7 @@ links[25:35]
 
 
 
-### Lets pull one of the link pages and see what we can get!  
+## Lets pull one of the link pages and see what we can get!  
 **Notice that these are relative links that all refer to pages and subdirectories within the azlyrics domain.**  
 We'll have to be sure to account for this when pulling successive pages.
 
@@ -777,14 +777,6 @@ plt.ylabel('Album Title')
 ![png](index_files/index_43_1.png)
 
 
-### Summary
-You should now have a brief intro to web scraping! The possabilities are nearly endless with what you can do. That said, not all websites will be thrilled with your new prowess. Surfing the web at super human speeds will get you banned from many domains and may violate the terms & conditions of many websites that require login. As such, there are a few considerations you should take along your way.
-
-* Is there a terms and conditions for using the website?
-* Test your scraping bot on in small samples to debug before scaling to hundreds, thousands or millions of requests.
-* Start thinking about your IP address: getting blacklisted from a website is no fun. Consider using a VPN.
-* Slow your bot down! Add delays along the way with the time package. Specifically, time.sleep(seconds) adds wait time in a program.
-
 ## Additional Resources
 
 #### Beatiful Soup - a good go to tool for parsing the DOM
@@ -795,3 +787,11 @@ https://www.seleniumhq.org/
 
 #### Scrapy - another package for scraping larger datasets at scale
 https://scrapy.org/
+
+## Summary
+You should now have a brief intro to web scraping! The possabilities are nearly endless with what you can do. That said, not all websites will be thrilled with your new prowess. Surfing the web at super human speeds will get you banned from many domains and may violate the terms & conditions of many websites that require login. As such, there are a few considerations you should take along your way.
+
+* Is there a terms and conditions for using the website?
+* Test your scraping bot on in small samples to debug before scaling to hundreds, thousands or millions of requests.
+* Start thinking about your IP address: getting blacklisted from a website is no fun. Consider using a VPN.
+* Slow your bot down! Add delays along the way with the time package. Specifically, time.sleep(seconds) adds wait time in a program.
