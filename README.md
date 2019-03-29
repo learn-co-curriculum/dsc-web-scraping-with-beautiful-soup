@@ -16,7 +16,7 @@ Before starting scraping, let's review the structure of HTML codes.
 
 As you know, "The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page." Amongst other things, this allows programming languages such as javascript to interactively change the page and HTML!  
 
-What you'll see is the DOM and HTML create a hierarchy of elements. This structure and the underlying elements can be naviagated similar to a family tree which is one of Beautiful Soups main mechanisms for naviagation; once you select a specific element within a page you can then navigate to successive elements using methods such as sibling, parent or descendents.
+What you'll see is the DOM and HTML create a hierarchy of elements. This structure and the underlying elements can be navigated similar to a family tree which is one of Beautiful Soups main mechanisms for navigation; once you select a specific element within a page you can then navigate to successive elements using methods to retrieve related tags including a tags sibling, parent or descendents.
   
 To learn more about the DOM see:  
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
@@ -26,7 +26,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduct
 ## Beautiful Soup   
 https://www.crummy.com/software/BeautifulSoup/bs4/doc/   
 
-Beautiful Soup is a Python library designed for quick scraping projects. It allows you to select and navigate the tree like structure of HTML documents, searching for particular tags, attributes or ids. It also allows you to then further traverse the HTML documents through relations like children or siblings. In other words, with beautiful soup, you could first select a specific div tag and then search through all of its nested tags.
+Beautiful Soup is a Python library designed for quick scraping projects. It allows you to select and navigate the tree-like structure of HTML documents, searching for particular tags, attributes or ids. It also allows you to then further traverse the HTML documents through relations like children or siblings. In other words, with beautiful soup, you could first select a specific div tag and then search through all of its nested tags.
 
 
 ```python
@@ -144,13 +144,13 @@ print(soup.find(id="link3"))
 
 ## Warnings and Precautions
 
-While web scraping is a powerful tool, it can also lead you into ethical and legal grey areas. To start, it is possible to make hundreds of requests a second to a website. Browsing at superhuman speeds such as this is apt to get noticed. Large volumes of requests such as this are apt to bog down a website's servers and in extreme cases could be considered a denial of service attack. Similarly, any website requiring login may contain information that is thereby not considered public and scraping said websites could leave you in legal jeopardy. Use your best judgement when scraping and exercise precautions. Having your IP address blocked from your favorite website for example could prove to be quite an annoyance.
+While web scraping is a powerful tool, it can also lead you into ethical and legal grey areas. To start, it is possible to make hundreds of requests a second to a website. Browsing at superhuman speeds such as this is apt to get noticed. Large volumes of requests such as this are apt to bog down a website's servers and in extreme cases could be considered a denial of service attack. Similarly, any website requiring login may contain information that is thereby not considered public and scraping said websites could leave you in legal jeopardy. Use your best judgment when scraping and exercise precautions. Having your IP address blocked from your favorite website, for example, could prove to be quite an annoyance.
 
 ## Additional Resources
 
-Beatiful soup is the preliminary tool for web scraping. That said, there are more complex examples where you may wish to either scrape larger amounts of data through full on web crawling, or trickier examples involving javascript. For these and other scenarios, alternative tools such as selenium and scrapy are worth investigating.
+Beautiful soup is the preliminary tool for web scraping. That said, there are more complex examples where you may wish to either scrape larger amounts of data through full-on web crawling, or trickier examples involving javascript. For these and other scenarios, alternative tools such as selenium and scrapy are worth investigating.
 
-#### Beatiful Soup - a good go to tool for parsing the DOM
+#### Beautiful Soup - a good g- to tool for parsing the DOM
 https://www.crummy.com/software/BeautifulSoup/?
 
 #### Selenium - Browser automation (useful when you need to interact with javascript for more complex scraping)
@@ -160,4 +160,4 @@ https://www.seleniumhq.org/
 https://scrapy.org/
 
 ## Summary
-You should now have a brief intro to web scraping! The possabilities are nearly endless with what you can do. That said, be careful, as mentioned.
+You should now have a brief intro to web scraping! The possibilities are nearly endless with what you can do. That said, be careful, as mentioned.
