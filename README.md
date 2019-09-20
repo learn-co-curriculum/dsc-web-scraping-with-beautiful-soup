@@ -148,7 +148,7 @@ While web scraping is a powerful tool, it can also lead you into ethical and leg
 
 ## Additional Resources
 
-Beautiful soup is the preliminary tool for web scraping. That said, there are more complex examples where you may wish to either scrape larger amounts of data through full-on web crawling, or trickier examples involving javascript. For these and other scenarios, alternative tools such as selenium and scrapy are worth investigating.
+Beautiful soup is the preliminary tool for web scraping. That said, there are more complex examples where you may wish to either scrape larger amounts of data through full-on web crawling or trickier examples involving javascript. For these and other scenarios, alternative tools such as selenium and scrapy are worth investigating.
 
 #### Beautiful Soup - a good g- to tool for parsing the DOM
 https://www.crummy.com/software/BeautifulSoup/?
