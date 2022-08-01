@@ -1,4 +1,3 @@
-
 # An Introduction to Web Scraping and Beautiful Soup
 
 ## Introduction
@@ -6,7 +5,9 @@
 Now that you've gotten a taste of HTML and CSS, it's time to reverse engineer that knowledge to extract data from the web. In this lesson, you'll learn how to use Beautiful Soup, a Python package used for web scraping. You'll also get some hands-on scraping practice.
 
 ## Objectives
+
 You will be able to:
+
 * Describe the DOM and its relationship to HTML
 * Select specific elements from HTML using Beautiful Soup
 
